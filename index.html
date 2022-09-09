@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="box-container" >
+		<div class="info">
+			<h1>Archive Extractor &#x1f910;</h1>
+			<p>Archive Extractor is a small and easy online tool that can extract over 70 types of compressed files, such as <br> 7z, zipx, rar, tar, exe, dmg and much more.
+</p>
+<div class="box-dark-mode">
+	DARK MODE
+<button id="dark" onclick="darkLight()">OFF</button>
+</div>
+		</div>
+	<div id="container">
+	
+		<ol id="demo-container">
+			<li>
+				<label>
+
+					<button id="file-input-button"><h2>Choose File</h2><br> from Device</button>
+					<input type="file" multiple id="file-input" hidden>
+				</label>
+			</li>
+			
+			<li class="content-here">
+				<label>
+					<span class="form-label"><h3>YOUR CONTENT  </h3></span>
+					<ul id="file-list" class="empty">
+					</ul>
+				</label>
+			</li>
+			<li>
+				<label>
+					<button id="download-button" disabled>DOWNLOAD</button>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="text" id="filename-input" value="Archive.zip">
+				</label>
+			</li>
+		</ol>
+
+	</div>
+	<div class="more-info">
+		<h4>Supported formats:</h4>
+<p class="format">7z, zipx, rar, tar, exe, dmg, iso, zip, msi, nrg, gz, cab, bz2, wim, ace
+alz, ar, arc, arj, bin, cdi, chm, cpt, cpio, cramfs, crunch, deb, dd, dms, ext, fat, format, gpt, hfs, ihex, lbr, lzh, lzma, lzm, mbr, mdf, nsa, nds, nsis, ntfs, pit, pak, pdf, pp, qcow2, rpm, sar, squashfs, squeeze, sit, sitx, swf, udf, uefi, vdi, vhd, vmdk, warc, xar, xz, z, zoo, zi, jar</p>
+
+
+	</div>
+	</div>
+	<script src="full-zip.js"></script>
+	<script src="script.js"></script>
+
+	<script>
+function darkLight() {
+   const darkMode = document.body;
+   darkMode.classList.toggle("dark-mode");
+   const modeBtn = document.getElementById("dark");
+   const btn = modeBtn.innerHTML;
+
+   if (btn==="OFF") {
+	   modeBtn.innerHTML="ON"
+	   
+   } else {
+	    modeBtn.innerHTML="OFF"
+   }
+
+}
+</script>
+</body>
+</html>
+	

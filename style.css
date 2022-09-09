@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  
+
+}
+body
+{
+background-color: rgb(195, 241, 255);
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+.dark-mode {
+  background-color: rgb(2, 17, 46);
+  color: #ffffffb9;
+}
+.box-dark-mode
+{
+    border: 1px solid #00e0c6;
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+}
+#dark {
+
+    padding: 0px 10px;
+    margin: 3px 8px;
+    background-color:inherit;
+    border-radius: 20px;
+    color: inherit;
+    border: 2px solid #00e0c6;
+    transition: 0.3s ease-in-out;
+}
+#dark:hover
+{
+    background-color:rgba(167, 189, 233, 0.568) ;
+    color: #ffffffb9;
+}
+
+.box-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+.info
+{
+    margin: 5rem 3rem;
+    width: 90vw;
+    margin-bottom: 3rem
+}
+.more-info
+{
+    width: 90vw;
+    margin-bottom: 3rem
+    
+}
+input
+{
+    text-align: center;
+}
+#file-input-button
+{
+    padding: 20px 40px;
+    line-height: 10px;
+    border-radius: 10px;
+    border: 1px solid #00e0c6;
+    background-color: #00e0c6;
+    color:rgb(2, 17, 46); ;
+    transition: ease-in-out 0.5s;
+}
+#file-input-button:hover
+{
+    background-color: #00e0c6b9;
+}
+
+h1
+{
+    color: #00e0c6;
+}
+h2
+{
+    font-size: 20px;
+    color: rgb(2, 17, 46); ;
+}
+h3
+{
+    margin: 10px;
+}
+h4
+{
+    font-size: 15px;
+    margin: 10px;
+}
+li
+{
+    margin: 10px;
+}
+.content-here
+{
+
+    border: 1px solid #00e0c6;
+    border-radius: 10px;
+    transition: 1s;
+  
+}
+#file-list li
+{
+   background-color: #00e0c6;
+   padding: 10px 25px;
+   margin: 20px;
+   border-radius: 10px;
+   color: white;
+   text-transform: uppercase;
+}
+#filename-input
+{
+    
+    border: 1px solid #00e0c6;
+    padding: 10px;
+    font-size: large;
+    visibility: hidden;
+
+}
+#download-button
+{
+    padding: 5px 10px;
+    background-color: #00e0c6;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 600;
+    border:1px solid #00e0c6 ;
+     color: rgb(2, 17, 46);
+    
+}
+#download-button:hover
+{
+    background-color: #00e0c6c7;
+   
+}
+.format
+{
+    font-size: 13px;
+}
