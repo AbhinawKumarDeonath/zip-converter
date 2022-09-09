@@ -1,8 +1,5 @@
 
 
-    
-    /* globals zip, document, URL, MouseEvent, AbortController, alert */
-
 (() => {
 
 	if (typeof TransformStream == "undefined") {
@@ -80,11 +77,7 @@
 				li.onclick = event => event.preventDefault();
 				const controller = new AbortController();
 				const signal = controller.signal;
-				// const abortButton = document.createElement("button");
-				// abortButton.onclick = () => controller.abort();
-				// abortButton.textContent = "✖";
-				// abortButton.title = "Abort";
-				// filenameContainer.appendChild(abortButton);
+				
 				try {
 					const entry = await model.addFile(file, {
 
